@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/mongoose": "^5.7.21",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.15",
+    "nodemon": "^2.0.4",
+    "ts-loader": "^7.0.4",
+    "ts-node": "^8.10.1",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "name": "messenger-chat-v0.1",
+  "description": "messenger-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon src/app.ts",
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "start-build": "npm run build",
+    "start:prod": "NODE_ENV=production nodemon dist/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bestkakarot1996/messenger-chat-v0.1.git"
+  },
+  "author": "trieuvidev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bestkakarot1996/messenger-chat-v0.1/issues"
+  },
+  "homepage": "https://github.com/bestkakarot1996/messenger-chat-v0.1#readme"
+}
